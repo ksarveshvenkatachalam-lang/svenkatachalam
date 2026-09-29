@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Kunguma Sarveshwaran Venkatachalam | Talent Acquisition Coordinator</title>
+<meta name="description" content="Playbooks and working notes on interview coordination for global technical hiring.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F3F5F7; --panel:#FFFFFF; --ink:#1B2230; --muted:#505B6B; --rule:#D5DBE2;
+  --work:#C9D2DC; --off:#EBEFF3; --overlap:#0E7C66; --overlap-soft:#CFEAE3; --flag:#9A5B00;
+  --font:"IBM Plex Sans","Segoe UI",Helvetica,Arial,sans-serif;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#12171F; --panel:#19202A; --ink:#E6EAF0; --muted:#A5AFBD; --rule:#2D3643;
+    --work:#3A4657; --off:#222A35; --overlap:#3CC4A1; --overlap-soft:#1E4A41; --flag:#E0A34A;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#12171F; --panel:#19202A; --ink:#E6EAF0; --muted:#A5AFBD; --rule:#2D3643;
+  --work:#3A4657; --off:#222A35; --overlap:#3CC4A1; --overlap-soft:#1E4A41; --flag:#E0A34A;
+}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:env(safe-area-inset-top,0px);-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font);font-size:1.0625rem;line-height:1.6}
+a{color:var(--overlap);text-underline-offset:3px}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var(--flag);outline-offset:3px;border-radius:2px}
+.wrap{max-width:70rem;margin:0 auto;padding:0 1.5rem}
+h1,h2,h3,h4{line-height:1.2;margin:0}
+h2{font-size:clamp(1.6rem,3vw,2.1rem);font-weight:600;margin-bottom:.6rem}
+h3{font-size:1.2rem;font-weight:600;margin:0 0 .4rem}
+p{margin:0 0 1rem}
+.intro{color:var(--muted);max-width:42rem}
+
+nav.top{display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:1.25rem 0;font-size:.95rem;flex-wrap:wrap}
+nav.top ul{display:flex;gap:1.25rem;list-style:none;margin:0;padding:0;flex-wrap:wrap;align-items:center}
+nav.top a{color:var(--ink);text-decoration:none}
+nav.top a:hover{text-decoration:underline}
+.theme-toggle{background:none;border:1px solid var(--rule);color:var(--ink);font:inherit;font-size:.85rem;padding:.3rem .7rem;border-radius:3px;cursor:pointer}
+
+/* hero */
+.hero{padding:2.5rem 0 3.5rem}
+.hero h1{font-size:clamp(2.2rem,5.5vw,3.8rem);font-weight:700;letter-spacing:-.02em;max-width:18ch}
+.hero .lede{font-size:1.15rem;color:var(--muted);max-width:38rem;margin:1.1rem 0 2.25rem}
+.clock{background:var(--panel);border:1px solid var(--rule);padding:1.5rem 1.5rem 1.25rem}
+.clock h2{font-size:1.25rem;margin-bottom:.25rem}
+.clock .sub{color:var(--muted);font-size:.92rem;margin-bottom:1.25rem}
+.clock-scroll{overflow-x:auto}
+.zones{display:grid;grid-template-columns:8.5rem repeat(24,minmax(1.35rem,1fr));gap:2px;min-width:44rem;font-size:.78rem}
+.zones .lab{display:flex;flex-direction:column;justify-content:center;padding-right:.5rem}
+.zones .lab b{font-size:.92rem}
+.zones .lab small{color:var(--muted)}
+.zones .hr{text-align:center;color:var(--muted);padding-bottom:.25rem}
+.c{height:2.3rem;background:var(--off)}
+.c.w{background:var(--work)}
+.c.o{background:var(--overlap)}
+.c.os{background:var(--overlap-soft)}
+.clock-key{display:flex;gap:1.25rem;flex-wrap:wrap;font-size:.85rem;color:var(--muted);margin-top:1rem}
+.clock-key i{display:inline-block;width:1rem;height:.7rem;margin-right:.35rem;vertical-align:middle}
+.finding{border-left:4px solid var(--overlap);padding:.2rem 0 .2rem 1rem;margin-top:1.25rem;max-width:44rem}
+.finding b{display:block}
+
+section{padding:3.25rem 0;border-top:1px solid var(--rule)}
+.principles{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.75rem 2.5rem;max-width:56rem;margin-top:1.75rem}
+.principles p{color:var(--muted);margin:0}
+
+.play{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,32rem);gap:2rem 3rem;padding:2.5rem 0;border-top:1px solid var(--rule)}
+.play:first-of-type{border-top:0;padding-top:1rem}
+.play .tag{color:var(--flag);font-weight:600;font-size:.92rem;margin-bottom:.4rem}
+.play h3.title{font-size:clamp(1.35rem,2.4vw,1.65rem);margin-bottom:.9rem}
+.play dl{margin:1rem 0 0}
+.play dt{font-weight:600;margin-top:.9rem}
+.play dd{margin:.15rem 0 0;color:var(--muted)}
+.fig{background:var(--panel);border:1px solid var(--rule);padding:1.2rem;align-self:start;min-width:0;margin:0}
+.fig h4{font-size:.95rem;font-weight:600;margin-bottom:.8rem}
+.fig figcaption{font-size:.84rem;color:var(--muted);margin-top:.85rem}
+.scroll{overflow-x:auto}
+table.t{border-collapse:collapse;width:100%;font-size:.86rem}
+table.t th,table.t td{padding:.5rem .45rem;text-align:left;vertical-align:top;border-bottom:1px solid var(--rule)}
+table.t th{font-weight:600;color:var(--muted)}
+table.t td.n{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+.warn{color:var(--flag);font-weight:600}
+.ok{color:var(--overlap);font-weight:600}
+ol.steps{margin:0;padding-left:1.3rem}
+ol.steps li{margin-bottom:.7rem}
+ol.steps li b{display:block}
+ol.steps li span{color:var(--muted);font-size:.92rem}
+
+.notes details{border-top:1px solid var(--rule);padding:1.1rem 0}
+.notes details:last-child{border-bottom:1px solid var(--rule)}
+.notes summary{cursor:pointer;font-size:1.2rem;font-weight:600}
+.notes summary span{display:block;font-size:.95rem;font-weight:400;color:var(--muted);margin-top:.2rem}
+.notes .body{max-width:42rem;margin-top:.75rem}
+
+footer{padding:3rem 0 4rem;border-top:1px solid var(--rule)}
+footer ul{list-style:none;padding:0;margin:1rem 0 0;display:flex;flex-wrap:wrap;gap:.75rem 2rem}
+.small{font-size:.85rem;color:var(--muted)}
+
+@media (max-width:54rem){
+  .play{grid-template-columns:1fr}
+  .principles{grid-template-columns:1fr}
+}
+@media print{nav.top{display:none}details{display:block}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<nav class="top" aria-label="Main">
+  <span><b>K. S. Venkatachalam</b></span>
+  <ul>
+    <li><a href="#playbooks">Playbooks</a></li>
+    <li><a href="#notes">Notes</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><button class="theme-toggle" type="button" id="themeBtn">Switch theme</button></li>
+  </ul>
+</nav>
+
+<header class="hero">
+  <h1>Interview coordination for global technical hiring</h1>
+  <p class="lede">Playbooks and working notes on running interview processes across EMEA, AMER and APAC for teams that hire infrastructure engineers. These sit alongside my CV rather than repeating it.</p>
+
+  <div class="clock">
+    <h2>Where the working day overlaps</h2>
+    <p class="sub">A 09:00 to 18:00 working day in each city, shown on London time in late September, while the UK is on British Summer Time.</p>
+    <div class="clock-scroll">
+      <div class="zones" id="zones" role="img" aria-label="London overlaps with New York from 14:00 to 18:00 and with Singapore from 09:00 to 11:00, London time. New York and Singapore never overlap during working hours."></div>
+    </div>
+    <div class="clock-key">
+      <span><i style="background:var(--work)"></i>Working hours</span>
+      <span><i style="background:var(--overlap)"></i>Overlaps with London</span>
+      <span><i style="background:var(--off)"></i>Outside working hours</span>
+    </div>
+    <p class="finding"><b>There is no hour when London, New York and Singapore are all at work.</b>A panel spanning all three regions has to be split across sessions or ask someone to start early or finish late. The playbooks below are about making that trade-off deliberately and fairly.</p>
+  </div>
+</header>
+
+<section aria-labelledby="how">
+  <h2 id="how">How I approach coordination</h2>
+  <p class="intro">Four working rules I apply regardless of the ATS or the team.</p>
+  <div class="principles">
+    <div><h3>Candidates are never the fallback</h3><p>When time zones force an awkward slot, it goes to an interviewer who has agreed to it, not to the candidate by default.</p></div>
+    <div><h3>Spread the inconvenient slots</h3><p>Early starts and late finishes rotate across the interviewer pool, so goodwill is not used up by the same two people.</p></div>
+    <div><h3>Every change has an owner and a clock</h3><p>A reschedule is only finished when the candidate, every interviewer and the ATS all show the same time.</p></div>
+    <div><h3>Privacy starts in the calendar</h3><p>Invite titles, attendee lists and attachments are where candidate data leaks most easily, so they get the same care as the ATS.</p></div>
+  </div>
+</section>
+
+<section id="playbooks" aria-labelledby="pb-h">
+  <h2 id="pb-h">Playbooks</h2>
+  <p class="intro">Self-initiated working material. Examples use illustrative roles, people and figures, not any company's real hiring data.</p>
+
+  <article class="play" aria-labelledby="p1">
+    <div>
+      <p class="tag">Multi-region scheduling</p>
+      <h3 class="title" id="p1">Planning a loop when the regions never overlap</h3>
+      <p>A Singapore-based candidate for an APAC solutions role, with interviewers in London and New York. Two of three regions can meet during working hours; the third cannot.</p>
+      <dl>
+        <dt>The rule I start from</dt>
+        <dd>Put as many interviews as possible in real overlap windows first, then solve the remaining gap with the least disruptive option.</dd>
+        <dt>Options for the gap, in order</dt>
+        <dd>Swap in an equally qualified interviewer from an overlapping region, move the session to an early start for the interviewer who has agreed to it, or split the loop across two days.</dd>
+        <dt>What I avoid</dt>
+        <dd>Asking the candidate to take more than one out-of-hours slot, or leaving more than two working days between the first and last interview.</dd>
+      </dl>
+    </div>
+    <figure class="fig">
+      <h4>Sample loop plan</h4>
+      <div class="scroll">
+      <table class="t">
+        <thead><tr><th scope="col">Session</th><th scope="col">London</th><th scope="col">Singapore</th><th scope="col">New York</th></tr></thead>
+        <tbody>
+          <tr><td>Hiring manager, London</td><td class="n">Tue 09:30</td><td class="n">16:30</td><td class="n">04:30</td></tr>
+          <tr><td>Technical deep dive, London</td><td class="n">Tue 10:15</td><td class="n">17:15</td><td class="n">05:15</td></tr>
+          <tr><td>Architecture case, New York</td><td class="n">Wed 11:00</td><td class="n">18:00</td><td class="n warn">06:00</td></tr>
+        </tbody>
+      </table>
+      </div>
+      <figcaption>The New York interviewer has agreed to a 06:00 start, so the candidate joins at 18:00, the end of their working day, rather than late in the evening. If that interviewer declines, a London architect takes the session on Tuesday morning instead.</figcaption>
+    </figure>
+  </article>
+
+  <article class="play" aria-labelledby="p2">
+    <div>
+      <p class="tag">Technical hiring</p>
+      <h3 class="title" id="p2">A coordinator's map of GPU cloud roles</h3>
+      <p>Coordinating well for infrastructure roles means knowing what each panel is testing and what can go wrong on the day. This is the reference I would build and keep updated with hiring managers.</p>
+      <dl>
+        <dt>Why it matters</dt>
+        <dd>Most avoidable interview failures in technical hiring are logistical: a lab environment that is not ready, the wrong specialist on a panel, or a presentation round with no brief.</dd>
+        <dt>How I would use it</dt>
+        <dd>As a checklist when opening a new role, and as a quick briefing for any coordinator covering the pipeline.</dd>
+      </dl>
+    </div>
+    <figure class="fig">
+      <h4>Role map</h4>
+      <div class="scroll">
+      <table class="t">
+        <thead><tr><th scope="col">Role</th><th scope="col">Panel focus</th><th scope="col">Coordinator watch-out</th></tr></thead>
+        <tbody>
+          <tr><td>HPC or cluster engineer</td><td>Job scheduling, Slurm, cluster performance</td><td>Live exercises need lab access tested 24 hours ahead</td></tr>
+          <tr><td>Network engineer</td><td>InfiniBand and RoCE fabric design</td><td>Very small interviewer pool, so book early</td></tr>
+          <tr><td>ML platform engineer</td><td>Kubernetes, orchestration, reliability</td><td>Pair-programming tools and permissions checked before the day</td></tr>
+          <tr><td>Data centre operations</td><td>Hardware, safety, on-site processes</td><td>Site visits need access passes and travel arranged</td></tr>
+          <tr><td>Solutions architect</td><td>Customer presentation and design</td><td>Case brief sent with enough preparation time</td></tr>
+        </tbody>
+      </table>
+      </div>
+      <figcaption>Illustrative. Panel content always comes from the hiring manager; the coordinator's job is making sure the day runs as designed.</figcaption>
+    </figure>
+  </article>
+
+  <article class="play" aria-labelledby="p3">
+    <div>
+      <p class="tag">Disruption handling</p>
+      <h3 class="title" id="p3">When an interviewer drops out</h3>
+      <p>Late changes are routine in global hiring. What matters is that the candidate hears about it quickly and the replacement is someone who can assess the same things.</p>
+      <dl>
+        <dt>What I keep ready</dt>
+        <dd>A backup interviewer list for each role family, agreed with hiring managers, showing who can cover which interview and in which time zone.</dd>
+        <dt>How I would measure it</dt>
+        <dd>Share of changes resolved without moving the candidate, and time from the dropout to the candidate being told.</dd>
+      </dl>
+    </div>
+    <figure class="fig">
+      <h4>Reschedule protocol</h4>
+      <ol class="steps">
+        <li><b>Within 30 minutes: check the backup list</b><span>Find a trained substitute in the same or an overlapping time zone.</span></li>
+        <li><b>Within 2 hours: tell the candidate</b><span>Either confirm the substitute or offer three alternative times within 48 hours.</span></li>
+        <li><b>Same day: update every record</b><span>ATS stage, calendar invites, interview kit assignment and the substitute's brief.</span></li>
+        <li><b>End of week: review the cause</b><span>Repeated dropouts from one interviewer or role become a conversation with the hiring manager.</span></li>
+      </ol>
+    </figure>
+  </article>
+
+  <article class="play" aria-labelledby="p4">
+    <div>
+      <p class="tag">Reporting</p>
+      <h3 class="title" id="p4">A weekly snapshot that leads to action</h3>
+      <p>A weekly report is only useful if every number on it has a definition, a threshold and a person who acts when it goes red.</p>
+      <dl>
+        <dt>Definitions I would agree first</dt>
+        <dd>Time to schedule runs from the stage move in the ATS to a confirmed invite. A scorecard is late 24 hours after the interview ends. A candidate is stale after seven days in one stage with no activity.</dd>
+        <dt>What the snapshot is not</dt>
+        <dd>A league table of recruiters. It shows where the process is slowing, by region and stage.</dd>
+      </dl>
+    </div>
+    <figure class="fig">
+      <h4>Snapshot layout, one week</h4>
+      <div class="scroll">
+      <table class="t">
+        <thead><tr><th scope="col">Region</th><th scope="col">Time to schedule</th><th scope="col">Scorecards on time</th><th scope="col">Stale candidates</th></tr></thead>
+        <tbody>
+          <tr><td>EMEA</td><td class="n ok">1.2 days</td><td class="n ok">93%</td><td class="n">2</td></tr>
+          <tr><td>AMER</td><td class="n">1.8 days</td><td class="n warn">71%</td><td class="n">4</td></tr>
+          <tr><td>APAC</td><td class="n warn">3.1 days</td><td class="n">86%</td><td class="n warn">7</td></tr>
+        </tbody>
+      </table>
+      </div>
+      <figcaption>Illustrative figures. Here the actions would be a scorecard nudge for AMER panels and a review of APAC stages with the hiring managers.</figcaption>
+    </figure>
+  </article>
+</section>
+
+<section id="notes" aria-labelledby="notes-h">
+  <h2 id="notes-h">Notes</h2>
+  <p class="intro">Short pieces on the parts of coordination that rarely get written down.</p>
+  <div class="notes">
+    <details>
+      <summary>The candidate data hiding in your calendar<span>Why invite titles deserve the same care as the ATS.</span></summary>
+      <div class="body">
+        <p>An invite titled with a candidate's full name and the role they are leaving for can be visible to anyone who can see the interviewer's calendar. Attached CVs travel further still.</p>
+        <p>I use a candidate reference and role code in invite titles, keep interview events private, link to the ATS rather than attaching documents, and remove external attendees once a process closes.</p>
+      </div>
+    </details>
+    <details>
+      <summary>Time to schedule is a candidate experience measure<span>Speed is the first thing candidates notice.</span></summary>
+      <div class="body">
+        <p>Candidates rarely see the quality of an interview kit, but they always notice how long it takes to hear back and whether the times offered make sense for where they live.</p>
+        <p>In competitive technical hiring, a quick, well-organised process tells a candidate how the company works before they have met anyone on the team.</p>
+      </div>
+    </details>
+    <details>
+      <summary>Coordinating for people who build infrastructure<span>Speaking enough of the language to help.</span></summary>
+      <div class="body">
+        <p>I don't need to assess a network engineer, but I do need to know that a fabric design interview needs a whiteboard tool that works, and that the two people qualified to run it are often the same two people on call.</p>
+        <p>That understanding turns scheduling from a calendar exercise into protecting the time of a scarce team.</p>
+      </div>
+    </details>
+  </div>
+</section>
+
+<footer id="contact">
+  <h2>Contact</h2>
+  <p class="intro">Happy to talk through any of these playbooks.</p>
+  <ul>
+    <li><a href="mailto:Ksarveshvenkatachalam@gmail.com">Ksarveshvenkatachalam@gmail.com</a></li>
+    <li><a href="tel:+447407646243">+44 7407 646243</a></li>
+  </ul>
+  <p class="small" style="margin-top:2rem">Playbooks on this site are independent working material. Examples are illustrative and contain no real candidate or company data.</p>
+</footer>
+
+</div>
+<script>
+(function(){
+  // Working hours 09:00-18:00 local, expressed in London time (BST, late September).
+  // New York (EDT) = London - 5; Singapore (SGT) = London + 7.
+  var zones=[
+    {name:"London",sub:"BST, UTC+1",start:9,end:18,base:true},
+    {name:"New York",sub:"EDT, UTC-4",start:14,end:23},
+    {name:"Singapore",sub:"SGT, UTC+8",start:2,end:11}
+  ];
+  var el=document.getElementById('zones'), html='<span></span>';
+  for(var h=0;h<24;h++){html+='<span class="hr">'+(h%3===0?String(h).padStart(2,'0'):'')+'</span>';}
+  var lon=zones[0];
+  zones.forEach(function(z){
+    html+='<span class="lab"><b>'+z.name+'</b><small>'+z.sub+'</small></span>';
+    for(var h=0;h<24;h++){
+      var w=h>=z.start&&h<z.end, cls='c';
+      if(w){cls+=(!z.base&&h>=lon.start&&h<lon.end)?' o':' w';}
+      if(z.base&&w){var shared=zones.slice(1).some(function(o){return h>=o.start&&h<o.end;});cls='c'+(shared?' o':' w');}
+      html+='<span class="'+cls+'" title="'+String(h).padStart(2,'0')+':00 London"></span>';
+    }
+  });
+  el.innerHTML=html;
+
+  var root=document.documentElement, btn=document.getElementById('themeBtn'), key='theme';
+  function current(){var t=root.getAttribute('data-theme');if(t)return t;return window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';}
+  try{var s=localStorage.getItem(key);if(s)root.setAttribute('data-theme',s);}catch(e){}
+  btn.addEventListener('click',function(){var n=current()==='dark'?'light':'dark';root.setAttribute('data-theme',n);try{localStorage.setItem(key,n);}catch(e){}});
+})();
+</script>
+</body>
+</html>
